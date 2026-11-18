@@ -1,0 +1,14 @@
+{
+  "name": "huaweicloud-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP Server on Huawei Cloud FunctionGraph",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "npm run package && terraform apply",
+    "package": "zip -r mcp-server.zip index.js"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
